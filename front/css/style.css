@@ -1,12 +1,15 @@
-
+* {
+    color: white;    
+}
 
 /*
 Dentro del Header
 */
 
 header {
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #1C2833;
+    padding: 3%;
+    margin-bottom: 3%;
 }   
 
 header nav{
@@ -34,55 +37,30 @@ Dentro del main
 */
 
 main {
-    background-color: lavenderblush;
     margin: 0 2%;
 }
 
-.primeraPelicula {
-    background-color: salmon;
-    padding: 1%;
-    margin-bottom: 2%;
-
-    width: auto;
-    border-radius: 30px;
-
-    display: flex;
-    flex-direction: row;
-    height: 700px;
+main article {
+    background-color: #1C2833;
 }
 
-.segundaPelicula {
-    background-color: salmon;
+.fila {
     padding: 1%;
-    margin-bottom: 2%;
+    margin: 1%;
 
     width: auto;
-    border-radius: 30px;
     
-    display: flex;
-    flex-direction: row;
-    height: 700px;
-}
-
-.terceraPelicula {
-    background-color: salmon;
-    padding: 1%;
-
-    width: auto;
     border-radius: 30px;
-    
     display: flex;
-    flex-direction: row;
-    height: 700px;
 }
 
 .box {
-    background-color: cornflowerblue;
-
     flex: 1;
-    border: 1px solid black;
     padding: 1%;
     margin: 0.2%;
+    
+    text-align: center;
+    justify-content: center;
 }
 
 .titulo-pelicula {
@@ -90,14 +68,14 @@ main {
     padding: 2%;
     margin-bottom: 3%;
 
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 .descripcion-pelicula {
     padding: 1%;
-    
-    font-size: 18px;
+    font-size: 30px;
+    text-align: center;
 }
 .imagen-pelicula {
     width: 100%;
@@ -106,14 +84,14 @@ main {
 .datos-relevantes {
     padding: 1%;
 
-    font-size: 18px;
+    font-size: 50px;
 }
 /*
 Dentro del footer
 */
 
 footer {
-    background-color: aquamarine;
+    background-color: #1C2833;
     margin-top: 2%;
     padding: 3%;
 
