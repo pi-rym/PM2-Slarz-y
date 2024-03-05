@@ -1,0 +1,121 @@
+
+
+/*
+Dentro del Header
+*/
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+}   
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1%;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+header nav h1 {
+    font-size: 30px;
+}
+
+.referencia-nav {
+    font-size: 20px;
+}
+
+/*
+Dentro del main
+*/
+
+main {
+    background-color: lavenderblush;
+    margin: 0 2%;
+}
+
+.primeraPelicula {
+    background-color: salmon;
+    padding: 1%;
+    margin-bottom: 2%;
+
+    width: auto;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+
+.segundaPelicula {
+    background-color: salmon;
+    padding: 1%;
+    margin-bottom: 2%;
+
+    width: auto;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+
+.terceraPelicula {
+    background-color: salmon;
+    padding: 1%;
+
+    width: auto;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+
+.box {
+    background-color: cornflowerblue;
+
+    flex: 1;
+    border: 1px solid black;
+    padding: 1%;
+    margin: 0.2%;
+}
+
+.titulo-pelicula {
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 3%;
+
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.descripcion-pelicula {
+    padding: 1%;
+    
+    font-size: 18px;
+}
+.imagen-pelicula {
+    width: 100%;
+    height: auto;
+}
+.datos-relevantes {
+    padding: 1%;
+
+    font-size: 18px;
+}
+/*
+Dentro del footer
+*/
+
+footer {
+    background-color: aquamarine;
+    margin-top: 2%;
+    padding: 3%;
+
+    text-align: center;
+}
