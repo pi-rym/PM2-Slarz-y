@@ -1,11 +1,19 @@
-const dataMovies = require("./tempData");
-const renderfILms = require("./render");
+const axios = require("axios");
+const renderFilms = require("./renderMovies");
 
-dataMovies.forEach(renderfILms);
+const getMovies = async () => {
+    try {
+        const response = await axios.get ("https://students-api.up.railway.app/movies");
+        const dataMovies = response.data;
+        dataMovies.forEach(movie => {
+            renderFilms(movie);
+        });
+    } catch (error) {
+        //Rellenar un mensaje de error
+    }
+};
 
-/*
-$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
-    data.forEach(renderFilms);
-}); */
+getMovies();
+
 
 /*Mejorar la pagina y agregar las dos que hacen falta*/

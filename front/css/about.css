@@ -2,6 +2,10 @@
     color: white;
 }
 
+/* 
+Dentro de footer
+*/ 
+
 header {
     background-color: #1C2833;
     padding: 3%;
@@ -31,46 +35,6 @@ header nav h1 {
 /*
 Dentro del main
 */
-
-.section-sobreMi {
-    margin: 15px 200px 15px 200px;
-    padding: 10px;
-    background-color: #1C2833;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#imagenSobreMi, #descripcionSobreMi {
-    flex: 1;
-    padding: 25px;
-}
-
-#imagenSobreMi {
-    text-align: right;
-}
-
-#miImagen {
-    width: 230px;
-    height: 300px;
-    border-radius: 100px;
-}
-
-#Nombre {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-#SobreMi {
-    font-size: 25px;
-    padding-bottom: 10px;
-}
-
-#Parrafo {
-    word-wrap: break-word;
-}
 
 /*
 Dentro del footer

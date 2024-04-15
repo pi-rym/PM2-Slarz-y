@@ -2,42 +2,43 @@
     color: white;
 }
 
+/*
+Dentro del main
+*/
 
-header {
-    background-color: #1C2833;
-    padding: 3%;
-    margin-bottom: 3%;
-}   
+.conatiner-information {
+    margin-top: 4%;
+    padding: 5%;
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 1%;
+    width: 80%;
+    height: auto;
 }
 
-header nav li {
-    display: inline-block;
-    margin-left: 15px;
+.information {
+    position: flex;
+    background-color: brown;
+    padding: 1%;
+    margin-top: 20px;
+    border-radius: 15px; /* Agrega esquinas redondeadas con un radio de 10px */
+    width: 70%;
 }
 
-header nav h1 {
-    font-size: 30px;
+.information h2 {
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
 }
 
-.referencia-nav {
+.information p {
     font-size: 20px;
 }
-
 
 /*
 Dentro del footer
 */
 
 footer {
-    background-color: #1C2833;
-    margin-top: 2%;
-    padding: 3%;
-
-    text-align: center;
+    padding-top: 100px;
 }
