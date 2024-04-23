@@ -11,12 +11,12 @@
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Bootstarp-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
     <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -33,13 +33,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">About</a>
+                  <a class="nav-link mx-lg-2" href="./pages/about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">History</a>
+                  <a class="nav-link mx-lg-2" href="./pages/history.html">History</a>
                 </li>
               </ul>
             </div>
@@ -48,39 +48,12 @@
       </nav>
     
     <main>
-        <!-- <article class="container-fluid position-relative galleryMovies" id="bg-movie">
-        </article> -->
-
         <article>
-              <div class="container-fluid text-center container-movies">
-                <div class="row">
-                  <div class="col">
-                    <div class="card text-bg-dark card-movies">
-                      <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" class="card-img img-fluid" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col ">
-                    <div class="card text-bg-dark card-movies">
-                      <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" class="card-img img-fluid" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card text-bg-dark card-movies">
-                      <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" class="card-img img-fluid" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                      </div>
-                    </div>
-                  </div>
+              <div class="container text-center container-movies">
+                <div class="row" id="showMovies">
+                  
                 </div>
               </div>
-                <!-- Contenido de las peliculas generado por el Script Index.js -->
         </article>
     </main>
 
@@ -119,7 +92,7 @@
         </div>    
       </footer>
     
-    <!-- <script src="public/bundle.js"></script>   -->
+    <script src="public/bundle.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

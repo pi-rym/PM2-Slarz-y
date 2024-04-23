@@ -112,7 +112,6 @@ footer {
 
 .container-movies {
     width: 80%;
-    background-color: #C7500A;
 }
 
 .card-movies {
@@ -127,50 +126,3 @@ footer {
                   1px  1px 0 #000;
 }
 
-
-/*body {
-    background-image: url('../assets/img/bg.jpg');
-    color: white;
-}
-
-.container-fluid{
-    background-color: aqua;
-}
-
-.navbar {
-    padding: 10px;
-    background-color: rgb(0, 0, 0, 0);
-    
-}
-
-.nav-item a{
-    color: white;
-}
-
-#logo {
-    font-size: 30px;
-    
-}
-
-@media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none;
-    }
-}
-
-.container-movies {
-    padding: 0% 15%; 
-    margin: 5%;
-}
-
-.movies {
-    font-size: 15px;
-}
-
-
-footer div p {
-    background-color: #AAAAAA;
-    font-size: 25px;
-}*/
-
-/*Usaré esto como plantilla*/

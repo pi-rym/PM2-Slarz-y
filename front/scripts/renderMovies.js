@@ -11,20 +11,20 @@ function renderFilms(element) {
     newDiv.classList.add("movie");
     
     /*Añadiendo propiedades*/
-    
+
     newDiv.innerHTML = `
-    <img src="${element.poster}" class="card-img-top" alt="Imagen de pelicula disponible">
-    
-    <div class="card-body text-center">
-        <h5 class="card-title titleMovie">${element.title}</h5>
+    <div class="col">
+    <div class="card text-dark card-movies">
+        <img src="${element.poster}" class="card-img img-fluid" alt="...">
+        </div>
     </div>`;
 
     newDiv.id = id++;
     
-    let newFilmsDiv = document.getElementById("movies");
+    let newFilmsDiv = document.getElementById("showMovies");
     newFilmsDiv.appendChild(newDiv);
 
-    newDiv.addEventListener("click", function() {
+    /* newDiv.addEventListener("click", function() {
         movieTransition(newDiv.id);
 
         let galleryMovie = document.getElementById("bg-movie");
@@ -39,7 +39,9 @@ function renderFilms(element) {
                 Rate: ${element.rate}/10 <br> <br>
             </p>
         `;
-    });    
+    });   */  
+
+    console.log("Elemento generado con exito");
 }
 
 module.exports = renderFilms;

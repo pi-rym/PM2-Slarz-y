@@ -35,10 +35,10 @@ Dentro del main
     font-size: 20px;
 }
 
-/*
-Dentro del footer
-*/
-
-footer {
-    padding-top: 100px;
+.conatiner-img {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
 }
+
+

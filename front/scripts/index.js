@@ -4,9 +4,9 @@ const renderFilms = require("./renderMovies");
 const getMovies = async () => {
     try {
         const response = await axios.get ("http://localhost:3000/movies");
-        const dataMovies = response.data;
-        dataMovies.forEach(movie => {
-            renderFilms(movie);
+        const movies = response.data;
+        movies.forEach(movie => {
+            renderFilms(movie); 
         });
     } catch (error) {
         //Rellenar un mensaje de error
