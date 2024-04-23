@@ -3,7 +3,7 @@ const renderFilms = require("./renderMovies");
 
 const getMovies = async () => {
     try {
-        const response = await axios.get ("https://students-api.up.railway.app/movies");
+        const response = await axios.get ("http://localhost:3000/movies");
         const dataMovies = response.data;
         dataMovies.forEach(movie => {
             renderFilms(movie);

@@ -1,6 +1,7 @@
 const movieTransition = require("./transition");
 let id = 0;
 
+
 function renderFilms(element) {
     let newDiv = document.createElement("div");
     

@@ -1,69 +1,131 @@
-* {
-    color: white;
+body {
+    background-color: #181B1B;
 }
 
-#bg-movie{
-    height: 700px;
-    width: 100%;
-    max-width: 1800px;
-    overflow: hidden;
-    background-image: url("https://wallpapercave.com/wp/wp2033181.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.contentMovie {
-    margin: 2%;
-}
-
-.contentMovie h5 {
-    font-size: 75px;
-    text-shadow: -1px -1px 0 #000,  
-                  1px -1px 0 #000,
-                 -1px  1px 0 #000,
-                  1px  1px 0 #000;
-}
-
-.contentMovie p {
-    padding-top: 50px;
-    font-size: 30px;
-    text-shadow: -1px -1px 0 #000,  
-                  1px -1px 0 #000,
-                 -1px  1px 0 #000,
-                  1px  1px 0 #000;
-}
-
-.movie {
+.navbar {
+    height: 80px;
     margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    position: relative;
 }
 
-
-.titleMovie {
-    font-size: 30px;
+.logo-navbar{
+    width: 150px;
+    height: auto;
 }
 
-.descriptionMovie{
-    margin-top: 8%;
-    font-size: 20px;
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
 }
 
-.poster{
-    margin: 1px;
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
 }
 
-.container-movies {
-    margin-top: 5%;
-    padding: 0px 18%;
+.nav-link {
+    font-size: 18px;
+    color: #EAECEE;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #CDCFD0;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 3px;
+        background-color: #C7500A;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-footer {
+        padding-top: 7px;
+    }
+    .container-contact {
+        padding-right: 100px;
+    }
 }
 
 footer {
-    padding-top: 5%;
-    padding: 0% 10%;
-    font-size: 30px;
-    text-align: center;
+    margin: 1%;
+    padding: 10px;
+}
+
+.container-footer {
+    color: white;
+}
+
+.nav-footer {
+    padding-top: 0.5%;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #EAECEE ;
+}
+
+.nav-footer:hover {
+    color: #CDCFD0;
+}
+
+.nav-footer:active {
+    color: #887A71;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
 }
 
 
+.footer-icon {
+    display: flex;
+    justify-content: right;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: left;
+}
+
+.container-footer img{
+    width: 200px;
+    height: auto;
+}
+
+.container-movies {
+    width: 80%;
+    background-color: #C7500A;
+}
+
+.card-movies {
+    width: auto;
+    height: auto;
+}
+
+.card-movies h5{
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
 
 
 /*body {
