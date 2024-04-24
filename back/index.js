@@ -1,7 +1,12 @@
 const app = require("./src/server");
+const dbCon = require("./src/config/dbCon")
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
-    console.log("Servidor iniciado");
-});
+dbCon().then(
+    res=>{     
+        app.listen(PORT, () => {
+            console.log("Servidor iniciado");
+        });
+    }
+)
