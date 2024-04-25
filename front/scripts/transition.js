@@ -11,12 +11,12 @@ module.exports = {
                     </div>
                 <div class="col-md-8 text-bg-dark">
                     <div class="container card-body contenido">
-                        <h5 class="card-title movie-title">${element.title}</h5>
+                        <h5 class="card-title movie-title">${element.title} (${element.duration})</h5>
                         <p class="card-text movie-information ">
                             Director: ${element.director}. <br>
                             Year: ${element.year}. <br>
                             Genre: ${element.genre}. <br>
-                            Rate: ${element.rate}/10 <br>
+                            Rate: ${element.rate}/10
                         </p>
                     </div>
                 </div>

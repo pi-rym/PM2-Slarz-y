@@ -73,13 +73,48 @@
       </article>
 
       <article>
-        <div class="container text-center container-movies">
-          <div class="row" id="showMovies">
-              <!-- Espacio donde van las peliculas generadas  -->
-          </div>
+        <div class="container text-center container-movies" id="showMovies">
         </div>
       </article>
     </main>
+
+    <form id="movieForm">
+      <div class="container-sm container-form">
+          <div class="mb-3">
+              <label for="title" class="form-label text-white">Titulo</label>
+              <input type="text" class="form-control" id="title" placeholder="Titulo de la pelicula" required>
+          </div>
+          <div>
+              <label for="year" class="text-white">Fecha de la pelicula</label>
+              <input type="date" id="year" required>
+          </div>
+          <div class="mb-3">
+              <label for="director" class="form-label text-white">Director</label>
+              <input type="text" class="form-control" id="director" placeholder="Ej. guillermo del toro" required>
+          </div>
+          <div class="mb-3">
+              <label for="duration" class="form-label text-white">Duracion</label>
+              <input type="text" class="form-control" id="duration" maxlength="5" placeholder="00:00" required>
+          </div>
+          <div class="mb">
+              <label for="genre" class="form-label text-white">Genero</label>
+              <textarea type="text" id="genre" name="genre" class="genre-input form-control" placeholder="Ingresa los generos separados por comas" required></textarea>
+          </div>
+          <div class="mb-3">
+              <label for="rate" class="form-label text-white">Calificacion</label>
+              <input type="number" class="form-control" id="rate" placeholder="9.9" maxlength="3" required>
+          </div>
+          <div class="mb-3">
+              <label for="poster" class="text-white">URL</label>
+              <input type="url" id="poster" class="form-control" required>
+          </div>
+          <div class="mb-3">
+              <button type="submit" class="btn btn-primary" id="submitButton" style="width: 200px; height: 80px; font-size: 40px; margin-top: 3%;">Submit</button>
+              <button type="button" class="btn btn-secondary" id="clearButton" style="width: 200px; height: 80px; font-size: 40px; margin-top: 3%; margin-left: 6%;">Clear</button>
+          </div>
+        </div>
+    </form>
+  
 
     <footer class="container-fluid position-relative bg-dark">
         <div class="row custom-row container-footer">
@@ -115,7 +150,6 @@
           </div>
         </div>    
       </footer>
-    
     <script src="public/bundle.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>

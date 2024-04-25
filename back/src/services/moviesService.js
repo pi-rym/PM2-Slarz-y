@@ -1,26 +1,15 @@
-const { getAllMovies } = require("../controllers/moviesController");
 const Movie = require("../models/Movie")
 
 class Movies {
-    constructor () {
-        this.arrMovies = [];
-    }
-
     async getAllMovies () {
         const movies = await Movie.find();
         return movies;
     }
 
-    postMovie ( {movie} ) {
-        if (!movie.title) return "Error, faltan parametros";
-        if (!movie.year) return "Error, faltan parametros";
-        if (!movie.duration) return "Error, faltan parametros";
-        if (!movie.genre) return "Error, faltan parametros";
-        if (!movie.rate) return "Error, faltan parametros";
-        if (!movie.poster) return "Error, faltan parametros";
-
-        this.arrMovies.push(movie);
-    }
+    async createMovie (movie) {
+        const newMovie = await Movie.create(movie);
+        return newMovie;
+    } 
 }
 
 const instMovies = new Movies();
