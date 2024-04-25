@@ -1,6 +1,4 @@
-const movieTransition = require("./transition");
-let id = 0;
-
+const  { movieTransition } = require("./transition");
 
 function renderFilms(element) {
     let newDiv = document.createElement("div");
@@ -19,29 +17,16 @@ function renderFilms(element) {
         </div>
     </div>`;
 
-    newDiv.id = id++;
+    newDiv.id = element._id;
+
+    console.log(element._id);
     
     let newFilmsDiv = document.getElementById("showMovies");
     newFilmsDiv.appendChild(newDiv);
 
-    /* newDiv.addEventListener("click", function() {
-        movieTransition(newDiv.id);
-
-        let galleryMovie = document.getElementById("bg-movie");
-
-        galleryMovie.innerHTML = `
-        <div class="position-absolute top-0 start-0 container-fluid contentMovie">
-            <h5 class="">${element.title}</h5>
-            <p class="">
-                Director: ${element.director}. <br> <br>
-                Year: ${element.year}. <br> <br>
-                Genre: ${element.genre}. <br> <br>
-                Rate: ${element.rate}/10 <br> <br>
-            </p>
-        `;
-    });   */  
-
-    console.log("Elemento generado con exito");
+    newDiv.addEventListener("click", function() {
+        movieTransition(element);
+    });    
 }
 
 module.exports = renderFilms;

@@ -35,34 +35,6 @@ body {
     color: #CDCFD0;
 }
 
-@media (min-width: 991px) {
-    .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 3px;
-        background-color: #C7500A;
-        visibility: hidden;
-        transition: 0.3s ease-in-out;
-    }
-
-    .nav-link:hover::before, .nav-link.active::before {
-        width: 100%;
-        visibility: visible;
-    }
-}
-
-@media (max-width: 767px) {
-    .container-footer {
-        padding-top: 7px;
-    }
-    .container-contact {
-        padding-right: 100px;
-    }
-}
 
 footer {
     margin: 1%;
@@ -94,7 +66,6 @@ footer {
     justify-content: center;
 }
 
-
 .footer-icon {
     display: flex;
     justify-content: right;
@@ -110,10 +81,6 @@ footer {
     height: auto;
 }
 
-.container-movies {
-    width: 80%;
-}
-
 .card-movies {
     width: auto;
     height: auto;
@@ -126,3 +93,78 @@ footer {
                   1px  1px 0 #000;
 }
 
+.container-info {
+    overflow: hidden;
+    padding: 0 60px 0px 60px;
+}
+
+#img-movie {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-information {
+    padding-top: 3%;
+    font-size: 20px;
+}
+
+.movie-title {
+    font-size: 50px;
+}
+
+.contenido {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.prueba {
+    align-items: center;
+    display: flex;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 3px;
+        background-color: #C7500A;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 767px) {
+    .container-movies {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .movie-information {
+        font-size: 40px;
+    }
+        
+    .movie-title {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-footer {
+        padding-top: 7px;
+    }
+    .container-contact {
+        padding-right: 100px;
+    }
+}

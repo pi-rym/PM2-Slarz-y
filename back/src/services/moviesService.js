@@ -1,3 +1,4 @@
+const { getAllMovies } = require("../controllers/moviesController");
 const Movie = require("../models/Movie")
 
 class Movies {
@@ -24,4 +25,4 @@ class Movies {
 
 const instMovies = new Movies();
 
-module.exports = instMovies
+module.exports = instMovies; 
